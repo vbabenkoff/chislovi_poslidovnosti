@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+	int mas[50];
+	int i, min, max, t=10;
+	srand(time(0));
+	printf("Vvedite min:\nmin=");
+	scanf("%d", &min);
+	printf("Vvedite max:\nmax=");
+	scanf("%d", &max);
+	
+	for(i = 0; i < t; i++){
+		mas[i] = rand() % (max - min) + min;
+		printf("%d\n", mas[i]);
+	}
+	
+	return 0;
