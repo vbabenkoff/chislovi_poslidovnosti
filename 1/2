@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+	int mas[50];
+	int i, t=10;
+	srand(time(0));
+	
+	for(i = 0; i < t; i++){
+		mas[i] = rand() % 200 - 100;
+		printf("%d\n", mas[i]);
+	}
+	
+	return 0;
+}
