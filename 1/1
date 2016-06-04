@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+	int mas[50];
+	int i, n, t=10;
+	srand(time(0));
+	printf("Vvedite n:\nn=");
+	scanf("%d", &n);
+	
+	for(i = 0; i < t; i++){
+		mas[i] = rand() % n;
+		printf("%d\n", mas[i]);
+	}
+	
+	return 0;
+}
